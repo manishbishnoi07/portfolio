@@ -3,6 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Avatar from "@material-ui/core/Avatar";
 import "./About.css";
 import profileImage from "../assets/profile.jpeg";
+import Header from "./Header";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -22,10 +23,8 @@ const About = () => {
 
   return (
     <div className="about" id="about">
-      <div className="about__header">
-        <h2>ABOUT</h2>
-        <p>Get to know more about me</p>
-      </div>
+      <Header />
+
       <div className="about__body">
         <div className="about__bodyInfo">
           <h3>Hello!</h3>
