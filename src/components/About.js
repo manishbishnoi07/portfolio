@@ -23,7 +23,7 @@ const About = () => {
 
   return (
     <div className="about" id="about">
-      <Header />
+      <Header title="ABOUT" subHeading="Get to know more about me" />
 
       <div className="about__body">
         <div className="about__bodyInfo">
