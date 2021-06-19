@@ -1,13 +1,3 @@
-import Skill1 from "./skill1.png";
-import Skill2 from "./skill2.png";
-import Skill3 from "./skill3.png";
-import Skill4 from "./skill4.jpg";
-import Skill5 from "./skill5.png";
-import Skill6 from "./skill6.jpg";
-import Skill7 from "./skill7.jpg";
-import Skill8 from "./skill8.png";
-import Skill9 from "./skill9.png";
-
 export const skillList = [
   {
     skillName: "HTML",
@@ -27,7 +17,7 @@ export const skillList = [
   {
     skillName: "React",
     skillUrl:
-      "https://user-images.githubusercontent.com/65498562/121435815-243da400-c99d-11eb-8dbc-b487a7506f50.jpg",
+      "https://user-images.githubusercontent.com/65498562/121437809-7633f900-c9a0-11eb-897e-0ad98ddd0727.png",
   },
   {
     skillName: "Redux",
@@ -39,11 +29,10 @@ export const skillList = [
     skillUrl:
       "https://user-images.githubusercontent.com/65498562/121435864-3a4b6480-c99d-11eb-8a00-3608943baeff.jpg",
   },
-  ,
   {
     skillName: "MongoDB",
     skillUrl:
-      "https://user-images.githubusercontent.com/65498562/121435886-446d6300-c99d-11eb-9714-db9304ebd7dd.jpg",
+      "https://user-images.githubusercontent.com/65498562/121437609-3f5de300-c9a0-11eb-8108-ec12e2e62def.jpg",
   },
   {
     skillName: "C++",
@@ -53,6 +42,6 @@ export const skillList = [
   {
     skillName: "MySQL",
     skillUrl:
-      "https://user-images.githubusercontent.com/65498562/121435948-5b13ba00-c99d-11eb-84f7-a6f71cd3de24.png",
+      "https://user-images.githubusercontent.com/65498562/121437938-babf9480-c9a0-11eb-8a56-370a6703cd22.png",
   },
 ];
