@@ -1,11 +1,15 @@
+import { Avatar } from "@material-ui/core";
 import React from "react";
 import "./Navbar.css";
+import Logo from "../assets/logo.PNG";
 const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navbar__left">
         <h3>
-          <a href="#">Manish Bishnoi</a>
+          <a href="#">
+            <Avatar src={Logo} alt="logo" />
+          </a>
         </h3>
       </div>
       <div className="navbar__right">
