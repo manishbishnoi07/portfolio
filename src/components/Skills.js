@@ -8,7 +8,7 @@ const Skills = () => {
   return (
     <div className="skills">
       <Header
-        title="My Skills."
+        title="Skills"
         subHeading="Passionate about new technologies, I keep exploring stuff. Here's the tech stack I've worked with!"
       />
       <div className="skillsContainer">
