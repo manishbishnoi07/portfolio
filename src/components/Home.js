@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "./Home.css";
+import homeAnime from "../assets/homeAnime.gif";
 const Home = () => {
   const ref1 = useRef(null);
   const ref2 = useRef(null);
@@ -34,7 +35,7 @@ const Home = () => {
 
   return (
     <div className="home">
-      <div className="home__content">
+      <div className="home__left">
         <p ref={ref1}>Hi there</p>
         <p ref={ref2}>I am Manish Bishnoi.</p>
         <p ref={ref3}>MERN Stack Web Developer</p>
@@ -44,6 +45,9 @@ const Home = () => {
             Contact
           </a>
         </div>
+      </div>
+      <div className="home__right">
+        <img src={homeAnime} alt="animation" className="homeAnime" />
       </div>
       <div className="scroll"></div>
     </div>
