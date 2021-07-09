@@ -6,6 +6,8 @@
 
 .header > h2 {
   color: #c83cb9;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .header > p {
