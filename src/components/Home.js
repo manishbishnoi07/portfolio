@@ -1,6 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import "./Home.css";
 import homeAnime from "../assets/homeAnime.gif";
+import { Link } from "react-scroll";
+
 const Home = () => {
   const ref1 = useRef(null);
   const ref2 = useRef(null);
@@ -41,15 +43,27 @@ const Home = () => {
         <p ref={ref3}>MERN Stack Web Developer</p>
         <div className="home__btn">
           <a href="#">Resume</a>
-          <a href="#contact" className="contact__btn">
-            Contact
-          </a>
+          <Link
+            to="contact"
+            className="contact__btn"
+            offset={-30}
+            smooth={true}
+            duration={1000}
+          >
+            LET'S TALK
+          </Link>
         </div>
       </div>
       <div className="home__right">
         <img src={homeAnime} alt="animation" className="homeAnime" />
       </div>
-      <div className="scroll"></div>
+      <Link
+        to="about"
+        offset={-30}
+        smooth={true}
+        duration={1000}
+        className="scroll"
+      ></Link>
     </div>
   );
 };
