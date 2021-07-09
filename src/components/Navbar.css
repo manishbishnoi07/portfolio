@@ -17,6 +17,7 @@
 .navbar__left {
   text-transform: uppercase;
   letter-spacing: 1px;
+  cursor: pointer;
 }
 
 .navbar__right ul {
