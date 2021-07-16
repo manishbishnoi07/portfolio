@@ -4,4 +4,25 @@
   flex-direction: column;
   align-items: center;
   padding: 15px 165px;
+  text-align: justify;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1140px) {
+  .projects {
+    padding: 15px 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projects {
+    padding: 5px 20px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .projects {
+    padding: 5px 15px;
+  }
 }

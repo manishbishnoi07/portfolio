@@ -63,7 +63,44 @@
   border: 2px solid #c83cb9;
   letter-spacing: 1px;
 }
-.projectCard__info a:nth-of-type(2) {
+.projectCard__info a:nth-last-child(1) {
   color: #c83cb9;
   background-color: white;
+}
+
+@media screen and (max-width: 962px) {
+  .projectCard {
+    flex-direction: column;
+    width: 60%;
+    max-width: 400px;
+    height: auto;
+  }
+  .projectCard__img {
+    height: 230px;
+  }
+  .projectCard__img img {
+    width: 100%;
+    height: 100%;
+  }
+  .projectCard__info {
+    padding: 10px 13px;
+    font-size: 14px;
+  }
+  .projectCard__info h2 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .projectCard {
+    width: 80%;
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .projectCard {
+    width: 100%;
+    max-width: 400px;
+  }
 }
