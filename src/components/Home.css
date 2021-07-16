@@ -1,12 +1,15 @@
 .home {
   height: 100vh;
   width: 100%;
-  background-color: #111111;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url("../assets/homebg.jpg") no-repeat center;
+  background-size: cover;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   color: white;
   padding: 15px 165px;
+  text-align: center;
 }
 
 .home__left {
@@ -44,6 +47,7 @@
   margin-top: 18px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .home__btn a {
@@ -59,7 +63,7 @@
 }
 
 .home__btn > .contact__btn {
-  background-color: #111111;
+  background: transparent;
   border: 1px solid #ffffff;
   border-radius: 35px;
   color: white;
@@ -130,5 +134,97 @@
   100% {
     opacity: 0;
     top: 90%;
+  }
+}
+
+@media screen and (max-width: 1362px) {
+  .home__left > p:nth-of-type(1) {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 38px;
+  }
+  .home__left > p:nth-of-type(2) {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 42px;
+  }
+
+  .home__left > p:nth-of-type(3) {
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .home__right {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .home {
+    padding: 15px 100px;
+  }
+  .home__right {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .home__left > p:nth-of-type(1) {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .home__left > p:nth-of-type(2) {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 32px;
+  }
+
+  .home__left > p:nth-of-type(3) {
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  .home__right {
+    width: 280px;
+  }
+
+  .home__btn {
+    margin-top: 13px;
+  }
+
+  .home__btn a {
+    padding: 3px 22px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-right: 13px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    padding: 5px 10px;
+  }
+  .home__right {
+    width: 240px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .home__right {
+    width: 200px;
+  }
+  .home__left > p:nth-of-type(1) {
+    font-weight: 500;
+    font-size: 15px;
+  }
+  .home__left > p:nth-of-type(2) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .home__left > p:nth-of-type(3) {
+    font-weight: 600;
+    font-size: 14px;
   }
 }

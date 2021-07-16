@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import "./Home.css";
-import homeAnime from "../assets/homeAnime.gif";
 import { Link } from "react-scroll";
 
 const Home = () => {
@@ -53,9 +52,6 @@ const Home = () => {
             LET'S TALK
           </Link>
         </div>
-      </div>
-      <div className="home__right">
-        <img src={homeAnime} alt="animation" className="homeAnime" />
       </div>
       <Link
         to="about"
