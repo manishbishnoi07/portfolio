@@ -1,0 +1,71 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+  background-color: black;
+  color: white;
+  flex-wrap: wrap;
+  padding: 20px 10px;
+}
+
+.footer__left {
+  text-align: center;
+}
+
+.footer__left p {
+  margin-bottom: 5px;
+}
+.footer__left div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__mid {
+  text-align: center;
+  margin: 10px 50px;
+}
+
+.footer__mid > span {
+  font-family: "Sacramento", cursive;
+  font-size: 40px;
+  color: #c83cb9;
+}
+
+.footer__mid p span {
+  color: red;
+}
+
+.footer__right {
+  margin-bottom: 10px 0;
+}
+
+.footer__rightIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.copyRight {
+  transform: translateY(30%);
+  margin: 0 1px !important;
+}
+
+.github,
+.linkedin,
+.mail {
+  margin: 0 10px;
+}
+
+.github {
+  color: white;
+}
+.linkedin {
+  color: #0a66c2 !important;
+}
+
+.mail {
+  color: #d14836;
+}
