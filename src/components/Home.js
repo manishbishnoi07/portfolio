@@ -41,7 +41,13 @@ const Home = () => {
         <p ref={ref2}>I am Manish Bishnoi.</p>
         <p ref={ref3}>MERN Stack Web Developer</p>
         <div className="home__btn">
-          <a href="#">Resume</a>
+          <a
+            href="https://drive.google.com/file/d/1LXUCGW1AWVEMn8L7VsZO6Rbw8cpoPg4c/view"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Resume
+          </a>
           <Link
             to="contact"
             className="contact__btn"
