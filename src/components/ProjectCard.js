@@ -16,7 +16,7 @@ const ProjectCard = ({
       <div className="projectCard__info">
         <h2>{projectName}</h2>
         <p>{projectDescription}</p>
-        {index != 3 && (
+        {index !== 3 && (
           <a href={sourceCode} target="_blank" rel="noopener noreferrer">
             Source Code
           </a>
