@@ -9,6 +9,7 @@
 }
 .contact__formContainer {
   width: 40%;
+  margin-bottom: 20px;
 }
 .contact__formContainer form {
   display: flex;
