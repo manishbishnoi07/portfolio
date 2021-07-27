@@ -17,6 +17,7 @@ const Skills = () => {
             className={`grid${index}`}
             skillName={skillName}
             skillUrl={skillUrl}
+            key={index}
           />
         ))}
       </div>
