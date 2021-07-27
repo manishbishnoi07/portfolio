@@ -5,7 +5,6 @@ import ProjectCard from "./ProjectCard";
 import "./Projects.css";
 
 const Projects = () => {
-  console.log("fdsfs");
   return (
     <div className="projects">
       <Header
