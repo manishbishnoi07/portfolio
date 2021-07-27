@@ -30,19 +30,22 @@ const About = () => {
           <h3>Hello!</h3>
           <br />
           <p>
-            My name is Manish Bishnoi. I am a pre-final year student pursuing my
+            My name is Manish Bishnoi. I am a final year student pursuing my
             Bachelor's degree in Computer Science and Engineering from Amity
-            University, Noida with an aggregate CGPA of 9.03. I am also a
-            scholarship holder from last 3 years for my academic performance.
+            University, Noida with an aggregate CGPA of <span>9.03</span>. I am
+            also a <span>scholarship holder</span> from last 3 years for my
+            academic performance.
           </p>
           <br />
           <p>
-            I am passionate about Web Development with a keen interest in new
-            technologies and enjoy working outside of my comfort zone.
+            I am passionate about <span>Web Development</span> with a keen
+            interest in new technologies and enjoy working outside of my comfort
+            zone.
             <br />
-            <br />I have a passion for problem solving and software development.
-            I am also very good at Data Structures and Algorithms. Find me on
-            following coding platforms.
+            <br />I have a passion for <span>problem solving</span> and software
+            development. I am also very good at{" "}
+            <span>Data Structures and Algorithms</span>. Find me on following
+            coding platforms.
           </p>
           <a
             href="https://leetcode.com/manishbishnoi897/"
