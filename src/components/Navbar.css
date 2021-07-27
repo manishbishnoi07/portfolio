@@ -6,12 +6,22 @@
   width: 100%;
   height: 8vh;
   padding: 0 150px;
-  background-color: #111111;
-  z-index: 100;
+  z-index: 200;
+  transition: all 0.35s ease;
 }
 
 .navbar a {
   color: white;
+  cursor: pointer;
+}
+
+.navbar.active {
+  background-color: white;
+  box-shadow: 5px 4px 10px 2px rgba(0, 0, 0, 0.17);
+}
+
+.navbar.active a {
+  color: #000;
 }
 
 .navbar__left {
@@ -24,6 +34,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.25s ease-in;
 }
 
 .navbar__right li {
@@ -33,10 +44,111 @@
 }
 
 .navbar__right li:last-of-type {
+  padding: 0;
   background-color: white;
   border-radius: 5px;
 }
 .navbar__right li:last-of-type a {
+  display: inline-block;
+  padding: 5px 20px;
   color: #000;
   font-weight: 800;
+}
+
+.navbar.active li:last-of-type {
+  background-color: black;
+}
+
+.navbar.active li:last-of-type a {
+  color: white;
+}
+
+.navbar__right > span {
+  padding: 0.3rem 0 0 0;
+  display: none;
+  cursor: pointer;
+  color: white;
+}
+
+.active span {
+  color: black;
+}
+
+.activeMob {
+  top: 0vh;
+}
+
+.fade {
+  overflow: hidden;
+  animation: tags 0.5s forwards;
+}
+
+li:nth-child(1) {
+  animation-delay: 0s;
+}
+li:nth-child(2) {
+  animation-delay: 0.1s;
+}
+li:nth-child(3) {
+  animation-delay: 0.13s;
+}
+li:nth-child(4) {
+  animation-delay: 0.16s;
+}
+li:nth-child(5) {
+  animation-delay: 0.19s;
+}
+
+@media screen and (max-width: 860px) {
+  li > a {
+    padding: 0 0.6rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 0 40px;
+  }
+  .navbar a {
+    color: white !important;
+  }
+  .navbar__right > span {
+    display: block;
+  }
+  ul {
+    height: 33vh;
+    position: absolute;
+    width: 100%;
+    top: -33vh;
+    left: 0;
+    z-index: -2;
+    background-color: rgba(0, 0, 0, 0.65);
+    flex-direction: column;
+  }
+  li {
+    padding: 2rem 0;
+    opacity: 0;
+  }
+  .navbar__right li:first-of-type {
+    margin-top: 30px;
+  }
+  .navbar__right li:last-of-type {
+    text-align: center;
+    margin-top: 0.5rem;
+    width: 60%;
+    background-color: white !important;
+  }
+  .navbar__right li:last-of-type a {
+    color: #000 !important;
+  }
+}
+@keyframes tags {
+  from {
+    opacity: 0;
+    transform: translate(0, -100px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
 }

@@ -69,7 +69,11 @@
     padding: 5px 20px;
   }
 }
-
+@media screen and (max-width: 500px) {
+  .skillsContainer {
+    grid-column-gap: 8px;
+  }
+}
 @media screen and (max-width: 300px) {
   .skills {
     padding: 5px 15px;
