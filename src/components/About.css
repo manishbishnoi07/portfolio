@@ -57,7 +57,7 @@
 
 @media screen and (max-width: 500px) {
   .about__bodyInfo {
-    font-size: 13px;
+    font-size: 15px;
   }
   .about__bodyImage .MuiAvatar-root {
     height: 200px;
